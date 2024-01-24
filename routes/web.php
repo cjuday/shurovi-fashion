@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use App\Http\Controllers\Controller;
 
-Route::get('/', function () {
-    return Inertia::render('Test');
-});
+Route::get('/', [Controller::class,'testView']);
