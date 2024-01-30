@@ -6,12 +6,10 @@
 
         <title>Laravel</title>
         @viteReactRefresh
-        @vite(['resources/css/app.css','resources/js/app.jsx'])
+        @vite(['resources/css/style.css','resources/js/app.jsx'])
         @inertiaHead
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     </head>
     <body>
         @inertia
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

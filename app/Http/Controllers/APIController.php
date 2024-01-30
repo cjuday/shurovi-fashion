@@ -4,17 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use Illuminate\Support\Facades\Http;
+use Inertia\Inertia;
 
 class APIController extends Controller
 {
-    function getCountryList() {
-        $response = Http::get('https://restcountries.com/v3.1/all');
+    public function HomePage() {
 
-        $data = json_decode($response);
-
-        foreach($data as $dt){
-            dd($dt);
-        }
+        return Inertia::render('HomeOne', [
+            'data' => app('App\Http\Controllers\SliderController')->index()
+        ]);
     }
 }

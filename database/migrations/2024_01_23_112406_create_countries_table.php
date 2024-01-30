@@ -33,11 +33,8 @@ return new class extends Migration
             $table->string('area');
             $table->string('timezones');
             $table->string('borders');
-            $table->string('nativeName');
-            $table->string('numericCode');
             $table->string('currencies');
             $table->string('languages');
-            $table->string('regionalBlocks');
             $table->timestamps();
         });
     }

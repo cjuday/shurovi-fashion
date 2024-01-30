@@ -1,0 +1,31 @@
+/*----------------------------------------*/
+/*  12. Footer CSS
+/*----------------------------------------*/
+
+.footer-bg-color{
+    background-color: #272C3F;
+    background-image: url('../../../public/images/background/footer-bg.png');
+}
+
+.footer-section {
+    padding: 10px 0 0px;
+    border-top: 1px solid gray;
+    overflow: hidden;
+    // Responsive
+    @media #{$tablet-device}{
+        padding: 10px 0 0px;
+    }
+    @media #{$large-mobile}{
+        padding: 10px 0 0px;
+    }
+}
+
+.copyright {
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+    padding: 20px 15px;
+    border-top: 1px solid var(--clr-gray-200);
+    color: var(--clr-white);
+    margin-bottom: 0;
+}
